@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Penguin</title>
+	<style type="text/css">
+		#play {
+			transition: 0.5s;
+			padding-left: 30px;
+		}
+		#play:hover {
+			transform: scale(1.1);
+		}
+		
+		#pause {
+			transition: 0.5s;
+			padding-left: 30px;
+		}
+		#pause:hover {
+			transform: scale(1.1);
+		}
+		#play:active, #pause:active {
+			opacity: 0.6;
+		}
+
+	</style>
+</head>
+<body>
+	<video src="penguin.mp4" width="640" height="360" type="video/mp4" poster="images/penguin_03.jfif">
+		<p>Your browser does not support web video but you can download the file <a href="library-mist.mp4">here</a>.</p>
+	</video>
+
+		<img id=play src="images/penguin_01.jfif">
+
+		<img id=pause src="images/penguin_02.jfif">
+
+	<script>
+      let myVideo = document.querySelector('video');
+      let playBtn = document.querySelector('#play');
+      let pauseBtn = document.querySelector('#pause');
+
+      function playVideo() {
+        myVideo.play();
+      }
+
+      function pauseVideo() {
+        myVideo.pause();
+      }
+
+      playBtn.addEventListener('click', playVideo);
+      pauseBtn.addEventListener('click', pauseVideo);
+    </script>
+
+</body>
+</html>
