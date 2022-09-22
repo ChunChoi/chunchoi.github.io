@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+  
+</head>
+<body>
+  
+  <input type="text" placeholder="What days of the week ?" id="myInput">
+  <button type="button" onClick="getInputValue();">Show me</button>
+  <div id="output"></div>
+
+  <div id="day"></div>
+  
+  <div id="picture"></div>
+  
+<script type="text/javascript">
+  
+function getInputValue(){
+  
+let inputVal = document.getElementById('myInput').value;
+let day = inputVal;
+//let season = 'summer';
+
+if (day === 'monday' || day == 'Monday') {
+document.getElementById('output').textContent = "It\'s blue Monday!";  
+document.getElementById('picture').innerHTML = '<img src=' +'"images/monday.jpg"' + '/>'
+console.log('It\'s blue Monday!');
+
+
+}else if(day === 'tuesday' || day == 'Tuesday'){
+  document.getElementById('output').textContent="It\'s Tuesday!";
+		document.getElementById('picture').innerHTML='<img src='+'"images/tuesday.jpg"'+'/>'
+    console.log('It\'s Tuesday!');      
+          
+
+}else if(day === 'wednesday' || day == 'Wednesday'){
+  document.getElementById('output').textContent="It\'s Wednesday";
+    document.getElementById('picture').innerHTML='<img src='+'"images/wednesday.jpg"'+'/>'
+    console.log('It\'s Wednesday!');      
+         }
+  
+else if(day === 'thursday' || day == 'Thursday'){
+document.getElementById('picture').innerHTML = '<img src=' + '"images/thursday.jpg" '+  '/>';
+document.getElementById('output').textContent = "It\'s Thursday!";
+    console.log('It\'s Thurday');      
+         }
+
+else if(day === 'friday' || day == 'Friday'){
+document.getElementById('picture').innerHTML = '<img src=' + '"images/friday.jpg" '+  '/>';
+document.getElementById('output').textContent = "It\'s Friday!";
+    console.log('It\'s Friday');      
+         }
+
+else if(day === 'saturday' || day == 'Saturday'){
+document.getElementById('picture').innerHTML = '<img src=' + '"images/saturday.jpg" '+  '/>';
+document.getElementById('output').textContent = "It\'s Saturday!";
+    console.log('It\'s Saturday');      
+         }
+
+else if(day === 'sunday' || day == 'Sunday'){
+document.getElementById('picture').innerHTML = '<img src=' + '"images/sunday.jpg" '+  '/>';
+document.getElementById('output').textContent = "It\'s Sunday!";
+    console.log('It\'s Sunday');      
+         }
+
+
+else {
+  console.log('Invalid day.');
+}
+}
+
+</script>
+  
