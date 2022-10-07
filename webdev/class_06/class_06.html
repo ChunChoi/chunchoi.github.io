@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JavaScript For Loop</title>
+
+<style type="text/css">
+
+	.container {
+		display: grid;
+		gap: 10px 10px;
+		grid-template-areas:
+		'q1 q2 q3 q4';
+	}
+	#q1 {
+		grid-area: q1;
+	}
+	#q2 {
+		grid-area: q2;
+	}
+	#q3 {
+		grid-area: q3;
+	}
+	#q4 {
+		grid-area: q4;
+	}
+	
+</style>
+
+</head>
+<body>
+	<h1>JavaScript For Loop</h1>
+<div class="container">
+	<p id="q1"></p>
+	<p id="q2"></p>
+	<p id="q3"></p>
+	<p id="q4"></p>
+</div>
+
+	<script type="text/javascript">
+		var text1 = "Write a for loop that prints out numbers from 1-100.<br>";
+		var text2 = "Write a for loop that prints out numbers from 50-100.<br>";
+		var text3 = "Write a for loop that prints out only even numbers from 1-100.<br>";
+		var text4 = "Write a for loop that prints out only even numbers from 25-100.<br>";
+
+		var i;
+		
+		for (i = 1; i <= 100; i++){
+
+  			text1 += "The number is " + i + "<br>";
+    
+}
+		document.getElementById("q1").innerHTML = text1;
+
+		for (i = 50; i <= 100; i++){
+
+  			text2 += "The number is " + i + "<br>";
+    
+}
+		document.getElementById("q2").innerHTML = text2;
+
+		for (i = 2; i <= 100; i = i+2){
+
+  			text3 += "The number is " + i + "<br>";
+}    
+		document.getElementById("q3").innerHTML = text3;
+
+		for (i = 25; i <= 100; i = i+2){
+
+  			text4 += "The number is " + i + "<br>";
+}    
+		document.getElementById("q4").innerHTML = text4;
+
+
+	</script>
+
+</body>
+</html>
