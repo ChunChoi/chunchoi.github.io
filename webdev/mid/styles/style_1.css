@@ -1,0 +1,40 @@
+body {
+	text-align: center;
+	background-color: black;
+	color: white;
+}
+#box_01 {
+	transition: 0.5s;
+	margin: 80px;
+	font-family: impact;
+}
+#box_02 {
+	transition: 0.5s;
+	margin: 80px;
+	font-family: impact;
+}
+#box_01:hover {
+	transform: scale(1.1);
+}
+#box_02:hover {
+	transform: scale(1.1);
+}
+
+#box_03 {
+	margin: 40px;
+
+}
+#box_04 {
+	background: #4285F4;
+	border-radius: 10px;
+	font-size: 25px;
+
+}
+#img_01 {
+	width: 300px;
+	border-radius: 50px;
+}
+#img_02 {
+	width: 300px;
+	border-radius: 50px;
+}

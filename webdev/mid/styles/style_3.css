@@ -1,0 +1,71 @@
+body {
+	text-align: center;
+	background-color: black;
+	color: white;
+
+}
+h1 {
+	font-size: 100px;
+	font-family: impact;
+}
+.box_01 {
+	grid-area: box01;
+	transition: 0.5s;
+	font-family: impact;
+}
+.box_01:hover {
+	transform: scale(1.1);
+}
+.box_02 {
+	grid-area: box02;
+	transition: 0.5s;
+	font-family: impact;
+}
+.box_02:hover {
+	transform: scale(1.1);
+}
+.box_03 {
+	grid-area: box03;
+	transition: 0.5s;
+	font-family: impact;
+}
+.box_03:hover {
+	transform: scale(1.1);
+}
+.box_04 {
+	grid-area: box04;
+	transition: 0.5s;
+	font-family: impact;
+}
+.box_04:hover {
+	transform: scale(1.1);
+}
+.box_05 {
+	grid-area: box05;
+	transition: 0.5s;
+	font-family: impact;
+}
+.box_05:hover {
+	transform: scale(1.1);
+}
+.box_06 {
+	grid-area: box06;
+	transition: 0.5s;
+	font-family: impact;
+}
+.box_06:hover {
+	transform: scale(1.1);
+}
+.box_07 {
+	grid-area: box07;
+	transition: 0.5s;
+	font-family: impact;
+}
+.box_07:hover {
+	transform: scale(1.1);
+}
+#p {
+	margin-bottom: 80px;
+	padding: 50px;
+	font-family: cursive;
+}
